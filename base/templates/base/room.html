@@ -1,0 +1,42 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<main>
+    <section id="room-name-wrapper">
+        <p>Room Name: <span id="room-name"></span></p>
+        <!-- This section displays the room name. -->
+    </section>
+
+    <section id="video-streams"></section>
+    <!-- This section displays the video streams of the users in the room. -->
+
+    <section id="controls-wrapper">
+        <div class="icon-wrapper">
+            <img class="control-icon" id="mic-btn" src="{% static 'images/microphone.svg' %}" />
+            <!-- This icon represents the microphone button. -->
+        </div>
+
+        <div class="icon-wrapper">
+            <img class="control-icon" id="camera-btn" src="{% static 'images/video.svg' %}" />
+            <!-- This icon represents the camera button. -->
+        </div>
+
+        <div class="icon-wrapper">
+            <img class="control-icon" id="leave-btn" src="{% static 'images/leave.svg' %}" />
+            <!-- This icon represents the leave button. -->
+        </div>
+    </section>
+</main>
+
+
+<script type="text/javascript" src="{% static 'assets/AgoraRTC_N-4.8.0.js' %}"></script>
+<!-- This script file loads the AgoraRTC_N-4.8.0.js library. -->
+<script type="text/javascript" src="{% static 'js/streams.js' %}" ></script>
+<!-- This script file handles the video streams. -->
+{% endblock content %}
+

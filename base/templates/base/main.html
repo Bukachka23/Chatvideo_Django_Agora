@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MyChat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static 'styles/main.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- This comment is for the meta charset tag. It tells the browser to use UTF-8 encoding for the page. -->
+    <!-- This comment is for the meta http-equiv tag. It tells the browser to use IE Edge mode for the page. -->
+    <!-- This comment is for the title tag. It sets the title of the page to "MyChat". -->
+    <!-- This comment is for the meta viewport tag. It tells the browser to scale the page to fit the width of the device. -->
+    <!-- This comment is for the link tag. It links to the main.css stylesheet. -->
+    <!-- This comment is for the script tag. It loads the main.js script file. -->
+</head>
+<body>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+<!-- This comment is for the script tag. It comments out the AgoraRTC_N-4.8.0.js script file. -->
+
+</html>
+
